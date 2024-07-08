@@ -7,17 +7,14 @@ class MovingAverage:
 
     def next(self, val: int) -> float:
         self.arr.append(val)
-        if len(self.arr) <self.avg:
-            s=0
-            for i in self.arr:
-                s+=i
-            return (s/(len(self.arr)))
+        if len(self.arr) > self.avg:
+            self.arr.pop(0)
+        s=0
+        for i in self.arr:
+            s+=i
+        return (s/(len(self.arr)))
         
-        else:
-            s=0
-            for i in range(len(self.arr)-1,len(self.arr)-self.avg-1,-1):
-                s+=self.arr[i]
-            return (s/self.avg)
+       
 
         
 
