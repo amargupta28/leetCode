@@ -1,5 +1,30 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
+        result=""
+        i=0
+        j=0
+
+        while i <len(word1) and j<len(word2):
+            result=result+word1[i]+word2[j]
+            i+=1
+            j+=1
+        
+        if i< len(word1):
+            result=result+word1[i:]
+        if j <len(word2):
+            result=result+word2[j:]
+        return result
+
+
+Complexity: O(m+n)
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
         num=[0]*((len(word1))+len(word2))
         w1=[i for i in word1]
         w2=[i for i in word2]
