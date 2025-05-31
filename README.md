@@ -1,5 +1,11 @@
-# leetCode
-Python Solutions for leet code
+# LeetCode Python Solutions
+
+This repository contains clean and efficient **Python solutions** for a wide range of **LeetCode coding interview problems** including arrays, strings, dynamic programming, trees, graphs, and more.
+
+Perfect for:
+- Interview preparation
+- Learning algorithms and data structures
+- Practicing coding problems in Python
 
 | # | Problem | LeetCode Link | Solution File |
 |---|---------|--------------|---------------|
